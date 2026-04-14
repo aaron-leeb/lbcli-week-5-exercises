@@ -7,6 +7,10 @@ hex_timestamp=0x20CD2459
 # add "0x" prefix and convert to pubkeyhash by taking RIPEMD-160(SHA-256(publicKey))
 public_key_hash=0x1e51fcdc14be9a148bb0aaec9197eb47c83776fb
 
-btcc 0x20CD2459 OP_CHECKLOCKTIMEVERIFY OP_DROP OP_DUP OP_HASH160 0x1e51fcdc14be9a148bb0aaec9197eb47c83776fb OP_EQUALVERIFY OP_CHECKSIG
+# Execute this command to get the CLTV script
+# btcc 0x20CD2459 OP_CHECKLOCKTIMEVERIFY OP_DROP OP_DUP OP_HASH160 0x1e51fcdc14be9a148bb0aaec9197eb47c83776fb OP_EQUALVERIFY OP_CHECKSIG
 
+cltv_script="0420cd2459b17576a9141e51fcdc14be9a148bb0aaec9197eb47c83776fb88ac"
+
+echo $cltv_script
 
